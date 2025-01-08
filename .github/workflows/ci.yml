@@ -10,11 +10,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    # Checkout code
-    name: Pull repo
-      uses: actions/checkout@v4
-
+      # Checkout code
     steps:
+      - name: Pull repo
+        uses: actions/checkout@v4
+
       # Setup Python
       - name: Setup Python
         uses: actions/setup-python@v4
