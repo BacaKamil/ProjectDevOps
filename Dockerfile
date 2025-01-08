@@ -2,7 +2,7 @@
 FROM python:3.14.0a2-alpine3.21
 
 # Working directory
-WORKDIR /app
+WORKDIR /
 
 # Copying the requirements file
 COPY . .
@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Running the application
-CMD ["python", "main.py"]
+CMD ["python", "app.py"]
