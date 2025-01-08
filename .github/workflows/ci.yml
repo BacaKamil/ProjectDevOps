@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     # Checkout code
+    name: Pull repo
+      uses: actions/checkout@v4
+
     steps:
       # Setup Python
       - name: Setup Python
