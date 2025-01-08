@@ -20,7 +20,7 @@ jobs:
 
       #Install necessary requirements
       - name: Install necessary requirements
-        run: pip install -r requirements.txt
+        run: pip install -r ../requirements.txt
 
       # Run tests 1
       - name: Echo test 1
